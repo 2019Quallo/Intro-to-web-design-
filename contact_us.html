@@ -76,7 +76,8 @@
         
         <article>
             <h2> General Inquiries</h2>
-            <form action="confirmation.html">
+            <!-- HTML form tag. the action attribute navigates to a page after submission-->
+            <form action="confirmation.html" id="contactForm">
                 <label for="fullname">Name: *</label><br/>
                 <input required type="text" id="fullname" name="fullname"/>
                 <br/> <br/>
@@ -91,6 +92,7 @@
                 <textarea required cols="50" rows="10" maxlength="150" id="inquiry"></textarea>
                 <br/>
                 <input type="submit"/>
+                <button type="button" onclick="ClearForm()"> Clear</button>
             </form>
         </article>
 
@@ -102,6 +104,6 @@
         <br><br/>
         <br><br/
     </footer>
-    
+    <script src="javascript/site.js"> </script>
 </body>
 </html>

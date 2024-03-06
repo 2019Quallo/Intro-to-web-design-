@@ -1,0 +1,44 @@
+The ages of 15 workers are to be collected. Write a pseudocode program to do the following:
+a.    Accept and store the ages into an array called workers_ages    
+b.    Find and print the largest and smallest age stored in the array workers_ages         
+c.    Find and print the average of the even ages in the array workers_ages
+
+START 
+Declare workers_age (14) as Integer 
+ total_even_ages = 0
+ Largest_age =-1
+ Smallest_age=999
+   
+
+For count = 0 to 14 do
+Print "Enter Workers age"
+read works_age [count]
+Endfor 
+   
+
+for count = 0 to 14 do 
+if(workers_age[count]> Largest_age) then
+Largest_age = workers_age[count]
+
+ENDIF
+
+if(workers_age[count]> smallest_age)then
+smallest_age = workers_age[count]
+ 
+ENDIF
+Endfor
+
+for count = 0 to 14 do
+if(workers_age[count] modulo 2 == 0)then 
+total_even_ages = total_even_ages + workers_ages[count]
+
+Endif
+Endfor
+
+if (total_even_ages>0)then
+average= total_even_ages/count
+ENDIF
+print" Largest age is ", Largest_age
+print" Smallest age is", smallest_age
+print" Average is", average
+   

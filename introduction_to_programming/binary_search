@@ -1,0 +1,24 @@
+START
+Declare arr[6] as integer
+first = 0
+last = 5
+For index = 0 to 5 do
+   Read arr[index]
+EndFor
+Print “Enter search value”
+Read searchKey
+For index = 0 to 5 do
+     midpoint = (first + last)/2
+     if( searchKey == arr[midpoint]) then
+           Print “Found value”
+          Else 
+             If( searchKey > arr[midpoint]) then
+                    first  = midpoint + 1
+                else 
+                     if( searchKey < arr[midpoint]) then
+                        last = midpoint – 1
+                     EndIF
+               EndIf
+        EndIf
+EndFor
+STOP
